@@ -1,0 +1,132 @@
+﻿/*深藍框淺藍底的標題 Css Style*/
+
+.TitleBox {
+    background-color: #DAEFFC;
+    color: #0000FF;
+    font-size: 16px;
+    border-collapse: collapse;
+    border: 2px solid #004DEC;
+    height: 30px;
+    width: 100%;
+    text-align: left;
+}
+
+
+/*深藍框白色底的標題 Css Style*/
+
+.TitleBoxWhite {
+    background-color: #FFFFFF;
+    color: #0000FF;
+    font-size: 16px;
+    border-collapse: collapse;
+    border: 2px solid #004DEC;
+    height: 30px;
+    width: 100%;
+    text-align: left;
+}
+
+
+/*有查詢條件的外框Table Css Style*/
+
+.SearchBox {
+    border: 0;
+    background-color: #004DEC;
+    padding: 4;
+    width: 100%;
+}
+
+
+/*查詢條件的Table Css Style*/
+
+.Search {
+    border: 0 hidden;
+    background-color: #FFFFFF;
+    font-size: 10pt;
+    color: #0000FF;
+    height: 40px;
+    width: 100%;
+    padding: 2;
+}
+
+
+/*綠色表格的 Css Style*/
+
+.Table {
+    border: 0;
+    background-color: #339966;
+    padding: 4;
+}
+
+
+/*白色表格的 Css Style*/
+
+.TableLine {
+    border: 0;
+    background-color: #FFFFFF;
+    padding: 4;
+    width: 100%;
+}
+
+
+/*表格 Heading 部份的 Css Style*/
+
+.TableHeading {
+    background-color: #004DEC;
+    color: #FFFFFF;
+    font-family: Courier New;
+    font-size: 13px;
+    text-align: center;
+    border: #99ccff 1px solid;
+}
+
+
+/*表格 Data 部份的 Css Style*/
+
+.TableData {
+    background-color: #DAEFFC;
+    color: #0000FF;
+    font-family: Courier New;
+    font-size: 13px;
+    border: #99ccff 1px solid;
+    text-align: left;
+}
+
+.TableDataWhite {
+    background-color: #FFFFFF;
+    color: #0000FF;
+    font-family: Courier New;
+    font-size: 13px;
+    border: #99ccff 1px solid;
+    text-align: left;
+}
+
+.TableDataGray {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: Courier New;
+    font-size: 13px;
+    border: #99ccff 1px solid;
+    text-align: left;
+}
+
+.day {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.time {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.Dashed {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-style: dashed;
+    border-color: #C9C9C9 #C9C9C9 #D4D4D4 #C9C9C9;
+    border-width: 1px 0px 0px 0px;
+    text-align: center;
+    color: #000000;
+}
