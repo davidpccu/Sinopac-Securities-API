@@ -92,7 +92,10 @@
                                             <td style="text-align: left;">期貨帳戶
                                             </td>
                                             <td style="text-align: left">
-                                                <span>1234567</span>
+                                                <select id="ddlAccount">
+                                                  <option value ="1234567" selected>1234567</option>
+                                                  <option value ="7654321">7654321</option>
+                                                </select>
                                             </td>
                                         </tr>
                                         <tr>

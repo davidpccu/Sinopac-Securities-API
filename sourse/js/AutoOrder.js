@@ -9,7 +9,8 @@ $(function() {
         $.ajax({
             url: "AutoOrder.ashx",
             data: {
-                "Login": true
+                "Login": true,
+                "ddlAccount": myddlAccount
             },
             type: "GET",
             dataType: "text",
@@ -24,6 +25,7 @@ $(function() {
                     $('#lblLoginfo').css('color', '#009900');
                     $('#lblLoginfo').text('登入成功');
                     $("#cmdSure").attr('disabled', false);
+                    $("#ddlAccount").attr('disabled', true);
                 } else {
                     alert('登入失敗');
                 }
@@ -57,6 +59,7 @@ $(function() {
                     $('#lblLoginfo').css('color', '#ff0000');
                     $('#lblLoginfo').text('尚未登入');
                     $("#cmdSure").attr('disabled', true);
+                    $("#ddlAccount").attr('disabled', false);
                     alert('登出成功');
                 } else {
                     alert('登出失敗');
@@ -146,11 +149,29 @@ function StartProcess() {
     UpdateTime = new Date($('#txtTempDate').html() + ' ' + $("#txtOrderTime").val());
     NowTime = new Date();
 
+    //避免斷線問題，背景呼叫Ajax Keep 連線
+    $.ajax({
+        url: "AutoOrder.ashx",
+        data: {
+            "KeepAlive": true
+        },
+        type: "POST",
+        dataType: "text",
+        success: function(req) {
+            if (req == 'KeepAlive') {
+                console.log('系統保持連線中...');
+            }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert('系統連線中斷');
+        }
+    });
+
     if (NowTime > UpdateTime) {
         clearInterval(TimerForOrder);
 
         var myBranch = 'F002000'; //期貨分公司代號
-        var myAccount = '1234567'; //期貨帳戶
+        var myAccount = $("#ddlAccount").find(":selected").val(); //期貨帳戶
         var myBuySell = $("input:radio:checked[name^='buy_or_sell']").val(); //買.賣
         var myFutureId = $("#future_id").val(); //商品代號
         var myPrice = $("#price").val(); //價格(6位數)

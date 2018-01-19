@@ -31,7 +31,7 @@ namespace WebApplication1
         public static string myAccount
         {
             get
-            { return "1234567"; }
+            { return "1234567"; } //改用JS取ddl值
         }
         public static string acc_ca_path
         {
