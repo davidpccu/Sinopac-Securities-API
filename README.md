@@ -35,8 +35,7 @@
 
 * A little side project
 * 單純順手筆記紀錄一下
-* 持續更新中...
-
+* 建議使用官方新版[Python API](https://github.com/Sinotrade/Shioaji)
 
 Reference :
 
@@ -44,4 +43,3 @@ Reference :
 
 [小爺的期貨程式交易](http://kengren523.pixnet.net/blog/post/50435426-%E5%A6%82%E4%BD%95%E6%92%B0%E5%AF%AB%E4%BA%A4%E6%98%93%E7%A8%8B%E5%BC%8F-part-3)
 
-[Simon的網路人工智慧實驗室](http://xpower2888.pixnet.net/blog/post/197952009-%E5%A6%82%E4%BD%95diy%E5%BB%BA%E6%A7%8B%E5%85%A8%E8%87%AA%E5%8B%95%E4%BA%A4%E6%98%93%E7%B3%BB%E7%B5%B1%E4%B9%8B%E4%B8%8B%E5%96%AE%E7%B3%BB%E7%B5%B1%E5%BB%BA%E7%AB%8B-)(註: 背景有coinhive)
